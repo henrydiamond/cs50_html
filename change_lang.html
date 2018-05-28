@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <title>Change language</title>
+      <script>
+        // Create JSON contain data
+        var arrLanguage = {"en":"Hello", "fr":"Bonjour", "ch":"你好"};
+        // Creating event handler for button
+        document.addEventListener('DOMContentLoaded', () => {
+          document.querySelectorAll('.translate').forEach(function(button){
+            button.onclick = function(){
+              document.querySelector('#sayhello').innerHTML = arrLanguage[button.dataset.lang];
+              // console.log(button.dataset.lang);
+              // console.log(arrLanguage[button.dataset.lang]);
+            };
+          });
+        });
+      </script>
+  </head>
+  <body>
+    <button class="translate" data-lang="en">English</button>
+    <button class="translate" data-lang="fr">French</button>
+    <button class="translate" data-lang="ch">Chinese</button>
+    <br>
+    <h1 id="sayhello">Hello</h1>
+  </body>
+</html>
