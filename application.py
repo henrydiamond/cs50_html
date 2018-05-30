@@ -9,5 +9,9 @@ def index():
 def table():
     return render_template("table.html")
 
+@app.route("/printmedia")
+def printmedia():
+    return render_template("printmedia.html")
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=3000, debug=True)
