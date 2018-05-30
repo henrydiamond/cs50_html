@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Print media</title>
+    <style>
+      @media print {
+        .screen-only {
+          display: none;
+        }
+      }
+    </style>
+	</head>
+	<body>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+    <p class="screen-only">
+      This is a paragraph that won't appear when you print to a paper. 
+      This is maybe used with a seal image</p>
+	</body>
+</html>
