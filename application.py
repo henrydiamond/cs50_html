@@ -13,5 +13,9 @@ def table():
 def printmedia():
     return render_template("printmedia.html")
 
+@app.route("/viewport")
+def viewport():
+    return render_template("viewport.html")
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=3000, debug=True)
