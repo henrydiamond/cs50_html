@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Using Viewport</title>
+		<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    </style>
+    <script>
+      console.log(screen.width);
+      console.log(screen.height);
+      document.addEventListener('DOMContentLoaded', () => {
+        document.querySelector('#resolution').innerHTML = window.screen.width + "x" + window.screen.height;
+      });
+
+    </script>
+	</head>
+	<body>
+      <h1>This will show the width of device displaying the page.</h1>
+      <div id="resolution">0</div>
+	</body>
+</html>
