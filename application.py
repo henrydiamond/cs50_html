@@ -20,6 +20,10 @@ def viewport():
 @app.route("/flexbox")
 def flexbox():
     return render_template("flexbox.html")
+
+@app.route("/grid")
+def grid():
+    return render_template("grid.html")
 	
 # Run server with python
 if __name__ == '__main__':
